@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #ff69b4;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  height: 50px;
+}
+
+h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+  min-width: 200px;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: right;
+  min-width: 150px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produto {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.produto button {
+  margin-top: 10px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.produto button:hover {
+  background-color: #e055a1;
+}
+
+.carrinho {
+  margin-top: 40px;
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.carrinho ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.carrinho button {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.carrinho button:hover {
+  background-color: #e055a1;
+}
+
+footer {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* Media Queries para responsividade */
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 10px;
+    flex-grow: 0;
+    width: 100%;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .carrinho {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .produto button {
+    font-size: 0.9rem;
+  }
+
+  .carrinho button {
+    font-size: 0.8rem;
+  }
+}
